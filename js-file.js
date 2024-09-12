@@ -1,0 +1,1 @@
+// orto botanico, museo archeologico, aereoporto, stazione centrale,

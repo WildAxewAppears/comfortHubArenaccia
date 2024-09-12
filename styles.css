@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+.header {
+    background-image: url(images/albergoDeiPoveri.jpg);
+    background-size: cover;
+    height: 50rem;
+    position: relative;
+}
+
+.headertext {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.headertext h5{
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #000000 !important;
+    letter-spacing: 0.5em;
+    line-height: 1.8em;
+    margin-bottom: 0;
+}
+
+.headertext h1 {
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1.2em;
+    color: #333;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.headerBottom {
+    display: flex;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 15rem);
+    color: black;
+    height: 10rem;
+    align-items: center;
+    gap: 12rem;
+    justify-content: flex-end;
+    transform: translateX(-100%); /* Start off-screen on the left */
+    opacity: 0; /* Initially hidden */
+    animation: slideInFade 1s ease-out forwards; /* Slide and fade in */
+    font-size: 17px;
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+
+.headerBottom p {
+    margin: 0;
+}
+
+.headerBookNow {
+    background-color: grey;
+    color: white;
+    width: 18rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.headerBookNow p {
+    margin: 0;
+}
+
+@keyframes slideInFade {
+    0% {
+        transform: translateX(-100%); /* Off-screen to the left */
+        opacity: 0; /* Fully transparent */
+    }
+    100% {
+        transform: translateX(0); /* Final position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.headerLocation {
+    margin-left: 1rem; /* Aggiungi un margine a sinistra */
+}
+
+.main{
+    padding: 54px 0;
+}
+
+.mainIntroduction, .roomIntroductionRow1, .roomIntroductionRow2 {
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+}
+
+.aboutUS{
+    margin-right: 5.5%;
+    max-width: 500px;
+}
+
+.aboutUS h6{
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 5px;
+    line-height: 1.8em;
+    margin-bottom: 0px;
+}
+
+.aboutUS h2{
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.4em;
+    margin-top: 0px;
+    
+}
+
+.introduction {
+    max-width: 500px;
+    line-height: 2em;
+    text-align: left;
+    font-size: 100%;
+    word-wrap: break-word;
+    margin-top: 37px;
+    max-height: 352px;
+}
+
+.roomIntroductionRow1, .roomIntroductionRow2 {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+
+.rooms {
+    margin-right: 5.5%
+}
+
+.guestReviews{
+    color: white;
+    background-image: linear-gradient(150deg, #2f3a44 25%, rgba(47, 58, 68, 0.68) 100%), 
+    url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/09/bed-and-breakfast-16.jpg) !important;
+    padding: 4% 0;
+}
+
+.reviewsHeader{
+    padding: 2% 0;
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+
+    font-size: 16px;
+    line-height: 2em;
+}
+
+.reviewsHeader h6{
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 5px;
+    line-height: 1.8em;
+    margin-bottom: 0;
+}
+
+.reviewsHeader h2{
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2em;
+    margin-top: 0;
+}
+
+.reviewsMain{
+    padding: 27px 0;
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+}
+
+.reviewsColumn1, .reviewsColumn2{
+    width: 47.25%;
+    margin-right: 5.5%;
+}
+
+.review{
+    margin-bottom: 5.82%;
+    padding: 30px 0 0;
+    max-width: 600px;
+    text-align: left;
+}
+
+.guestImg{
+    background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/07/P-05.jpg);
+    width: 60px !important;
+    height: 60px !important;
+
+    float: left;
+    display: block;
+    margin-right: 30px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    box-sizing: content-box;
+    border-radius: 90px;
+    position: relative;
+}
+.guestImg::before {
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
+        box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
+        border-radius: 90px;
+}
+
+.guestcomment_Name{
+    margin-left: 90px;
+}
+
+.guesreview{
+    font-style: italic;
+    letter-spacing: 0.5px;
+    line-height: 1.8em;
+}
+
+.guestName{
+    margin-top: 32px;
+    font-weight: 700;
+    display: block;
+}
+
+.moreReviews{
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 10%;
+    width: 10%;
+    margin: auto;
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 1024px) {
+    .headerBottom {
+        width: 100%; /* Adatta il contenuto alla larghezza dello schermo */
+    }
+
+    .rooms {
+        margin-right: 0; /* Rimuovi il margine se necessario */
+    }
+}
