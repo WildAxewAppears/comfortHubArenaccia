@@ -3,6 +3,45 @@ body {
     min-height: 100vh;
 }
 
+h1 {
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1.2em;
+    color: #333;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+h2{
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.4em;
+    margin-top: 0px;
+}
+
+h5{
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #000000 !important;
+    letter-spacing: 0.5em;
+    line-height: 1.8em;
+    margin-bottom: 0;
+}
+
+h6{
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 5px;
+    line-height: 1.8em;
+    margin-bottom: 0;
+}
+
 .header {
     background-image: url(images/albergoDeiPoveri.jpg);
     background-size: cover;
@@ -16,27 +55,6 @@ body {
     left: 45%;
     transform: translate(-50%, -50%);
     text-align: left;
-}
-
-.headertext h5{
-    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 20px;
-    color: #000000 !important;
-    letter-spacing: 0.5em;
-    line-height: 1.8em;
-    margin-bottom: 0;
-}
-
-.headertext h1 {
-    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 1.2em;
-    color: #333;
-    padding-bottom: 10px;
-    margin-top: 0;
 }
 
 .headerBottom {
@@ -110,25 +128,6 @@ body {
     max-width: 500px;
 }
 
-.aboutUS h6{
-    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 16px;
-    letter-spacing: 5px;
-    line-height: 1.8em;
-    margin-bottom: 0px;
-}
-
-.aboutUS h2{
-    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 1.4em;
-    margin-top: 0px;
-    
-}
-
 .introduction {
     max-width: 500px;
     line-height: 2em;
@@ -142,10 +141,6 @@ body {
 .roomIntroductionRow1, .roomIntroductionRow2 {
     margin-top: 30px !important;
     margin-bottom: 30px !important;
-}
-
-.rooms {
-    margin-right: 5.5%
 }
 
 .guestReviews{
@@ -249,19 +244,295 @@ body {
 .moreReviews{
     text-align: center;
     border: solid 1px black;
-    border-radius: 10%;
+    border-radius: 10px;
     width: 10%;
     margin: auto;
     background-color: white;
     color: black;
+    margin-top: 20px;
 }
+
+.whatyouget{
+    padding: 4% 0;
+}
+
+.whatyougetHeader{
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.whatyougetHeader1{
+    font-size: 16px;
+    line-height: 2em;
+    max-width: 512px;
+
+}
+
+.whatyougetHeader h6{
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 5px;
+    line-height: 1.8em;
+}
+
+.whatyougetHeader h2 {
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2em;
+}
+
+.whatyougetRow1, .whatyougetRow2, .whatyougetRow3{
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    position: relative;
+    display: flex;
+}
+
+.whatyougetText{
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2em;
+}
+
+.firstOfTheRow, .secondOfTheRow, .thirdOfTheRow{
+    gap: 10px;
+}
+
+.activities{
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    position: relative;
+    display: flex;
+}
+
+.firstElementOfCol, .secondElementOfCol, .thirdElementOfCol{
+    background-color: #f5f5f5;
+    border-width: 2px;
+    border-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+}
+
+.toggle{
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    line-height: 1.4em;
+    color: #666;
+    cursor: pointer;
+    position: relative;
+    padding: 0 50px 0 0;
+    word-wrap: break-word;
+    font-size: 16px;
+    margin: 0;
+}
+.toggle::before{
+    color: #b2b9c4;
+    right: 0;
+    left: auto;
+    content: "\E050";
+    position: absolute;
+    font-size: 16px;
+    top: 50%;
+    margin-top: -.5em;
+}
+
+.firstElementOfCol .toggleContent{
+    display: none;
+}
+
+.footer {
+    padding-top: 140px;
+    padding-right: 0px;
+    padding-bottom: 100px;
+    padding-left: 0px;
+    background-image: linear-gradient(150deg, #2f3a44 25%, rgba(38, 46, 53, 0) 100%), url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/09/bed-and-breakfast-15.jpg) !important;
+}
+
+.detailsContainer{
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    position: relative;
+}
+
+.footerLeftside {
+    color: white;
+}
+
+.footerLeftside h6{
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 5px;
+    line-height: 1.8em;
+    margin-bottom: 0;
+}
+
+.footerLeftside h2{
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2em;
+    margin-top: 0;
+}
+
+.buttonContainer {
+    text-align: right;
+}
+
+.bookARoom{
+    color: #000000 !important;
+    border-width: 10px !important;
+    border-radius: 0px;
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif !important;
+    font-weight: 700 !important;
+    background-color: #ffffff;
+
+    font-size: 20px;
+    padding: .3em 1em;
+    line-height: 1.7em !important;
+    border: 2px solid rgba(0, 0, 0, 0); /* Definisci il bordo come trasparente */;
+
+    display: inline-block;
+}
+
+.contacts{
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    position: relative;
+    margin-top: 4.5rem;
+}
+
+.whatsapp{
+    text-align: center;
+    height: 4rem;
+    color: #000000 !important;
+    border-width: 10px !important;
+    border-radius: 14px;
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif !important;
+    font-weight: 700 !important;
+    background-color: #ffffff;
+    font-size: 20px;
+    padding: .3em 1em;
+    line-height: 1.7em !important;
+    border: 2px solid rgba(0, 0, 0, 0);
+    display: inline-block;
+}
+
+
+.email{
+    text-align: center;
+    height: 4rem;
+    color: #000000 !important;
+    border-width: 10px !important;
+    border-radius: 14px;
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif !important;
+    font-weight: 700 !important;
+    background-color: #ffffff;
+    font-size: 20px;
+    padding: .3em 1em;
+    line-height: 1.7em !important;
+    border: 2px solid rgba(0, 0, 0, 0);
+    display: inline-block;
+}
+
+
+
 
 @media (max-width: 1024px) {
     .headerBottom {
         width: 100%; /* Adatta il contenuto alla larghezza dello schermo */
     }
+}
+
+@media (min-width: 981px) {
 
     .rooms {
-        margin-right: 0; /* Rimuovi il margine se necessario */
+        margin-right: 5.5%;
+        width: 29.6667%;
     }
+
+    .rooms3{
+        margin-right: 0;
+        width: 29.6667%;
+    }
+
+    .whatyouget{
+        padding: 4% 0;
+    }
+
+    .whatyougetHeader{
+        padding: 2% 0;
+    }
+
+    .whatyougetHeader1{
+        margin-bottom: 0;
+    }
+
+    .whatyougetRow1,  .whatyougetRow2,  .whatyougetRow3{
+        padding: 2% 0;
+    }
+
+    .firstOfTheRow, .secondOfTheRow{
+        display: flex;
+        width: 29.6667%;
+        margin-right: 5.5%;
+    }
+
+    .thirdOfTheRow{
+        display: flex;
+        width: 29.6667%;
+    }
+
+    .activities{
+        padding: 2% 0;
+    }
+
+    .activitiesColumn1{
+        width: 47.25%;
+        margin-right: 5.5%;
+    }
+    .activitiesColumn2{
+        width: 47.25%;
+    }
+
+    .firstElementOfCol, .secondElementOfCol, .thirdElementOfCol{
+        margin-bottom: 5.82%;
+    }
+
+    .detailsContainer{
+        display: flex;
+        padding: 2% 0;
+    }
+
+    .footerLeftside{
+        margin-right: 5.5%;
+        width: 47.25%;
+    }
+
+    .footerRightside{
+        width: 47.25%;
+        margin-bottom: 0;
+    }
+
+    .contacts{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+
+
+
 }
