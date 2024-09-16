@@ -644,10 +644,12 @@ h6{
     }
 
     .whatsapp{
+        width: 16rem;
         line-height: normal;
     }
 
     .email{
+        width: 16rem;
         font-size: 18px;
     }
 
