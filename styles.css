@@ -171,7 +171,7 @@ h6{
 
 .guestReviews{
     color: white;
-    background-image: linear-gradient(150deg, #2f3a44 25%, rgba(47, 58, 68, 0.68) 100%), 
+    background-image: linear-gradient(150deg, #2f3a44 25%, rgb(47 58 68 / 78%) 100%), 
     url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/09/bed-and-breakfast-16.jpg);
     background-size: cover ;
     padding: 4% 0;
@@ -206,10 +206,10 @@ h6{
     position: relative;
 }
 
-.guesreview{
+.guestreview{
     font-style: italic;
     letter-spacing: 0.5px;
-    line-height: 1.8em;
+    line-height: 1.4em;
 }
 
 .guestName{
@@ -227,6 +227,10 @@ h6{
     background-color: white;
     color: black;
     margin-top: 20px;
+}
+
+.moreReviews p {
+    font-weight: bold;
 }
 
 .whatyouget{
@@ -291,7 +295,7 @@ h6{
     color: #b2b9c4;
     right: 0;
     left: auto;
-    content: "\E050";
+    content: "+";
     position: absolute;
     font-size: 16px;
     top: 50%;
@@ -304,13 +308,33 @@ h6{
     margin-top: 10px;
 }
 
-.toggleContent span {
-    margin-left: auto;
+.toggleContent div span {
+    font-weight: bold;
 }
 
-.firstElementOfCol .toggleContent{
-    display: none;
+.toggleContent p {
+    font-size: 12px;
 }
+
+.toggleContent{
+    display: block;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: all .5s ease;
+}
+
+.visible{
+    visibility: visible;
+    opacity: 1;
+    max-height: 500px;
+    transition: all .5s ease;
+}
+
+
 
 .footer {
     padding-top: 140px;
@@ -384,6 +408,69 @@ h6{
     line-height: 1.7em ;
     border: 2px solid rgba(0, 0, 0, 0);
     display: inline-block;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 913px) {
+    /* Stili per schermi simili a quello dell'ASUS Zenbook Fold */
+    .mainIntroduction, .roomIntroductionRow1, .roomIntroductionRow2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .rooms img, .rooms3 img{
+        width: 100%;
+        height: auto;
+    }
+
+    .reviewsHeader h2{
+        font-size: 35px;
+    }
+
+    .reviewsMain{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .guestImg{
+        margin-right: 30px;
+    }
+
+    .guestName {
+        margin-left: 90px;
+    }
+
+    .moreReviews {
+        width: 15%;
+    }
+
+    .whatyougetRow1,  .whatyougetRow2,  .whatyougetRow3{
+        padding: 2% 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .firstOfTheRow, .secondOfTheRow, .thirdOfTheRow{
+        width: 100%;
+        
+    }
+
+    .firstOfTheRow, .secondOfTheRow, .thirdOfTheRow{
+        margin-bottom: 30px;
+    }
+
+    .activities{
+        padding: 2% 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activitiesColumn1, .activitiesColumn2{
+        width: 100%;
+    }
+
+    .firstElementOfCol, .secondElementOfCol, .thirdElementOfCol{
+        margin-bottom: 30px;
+    }
 }
 
 @media only screen 
