@@ -1,4 +1,29 @@
 // orto botanico, museo archeologico, aereoporto, stazione centrale,
+const images = ["images/arenacciaStrada.jpg",
+                "images/ortoBotanico.jpg",
+                "images/museoArcheologico.jpg",
+                "images/albergoDeiPoveri.jpg",
+                "images/aereoportoNapoli.jpg"
+]
+
+const imagesDiv = document.querySelector("#fadingImage");
+
+window.setInterval(changePicture, 3000);
+let i = 0;
+
+function changePicture() {
+  i++;
+  if (i > images.length - 1) i = 0;
+  imagesDiv.style.backgroundImage = `url(${images[i]})`;
+}
+
+
+
+
+
+
+
+
 const toggle = document.querySelectorAll(".toggle");
 toggle.forEach(function(toggle) {
     toggle.addEventListener("click", function(){
@@ -19,6 +44,8 @@ toggle.forEach(function(toggle) {
 
 const translations = {
     it: {
+        "house": "Intero Appartamento, 5 ospiti",
+        "breakfast": "colazione non inclusa",
         "about_us_title": "Chi Siamo",
         "about_us_subtitle": "Una Casa Ospitale nel Cuore dell'Arenaccia",
         "introduction_text": "Situata nel vivace quartiere Arenaccia, la nostra casa offre una combinazione perfetta di comfort e modernità. Con un balcone che dà sulla città e Wi-Fi gratuito per rimanere connessi, è l'ideale per chi vuole esplorare Napoli con facilità. Goditi la tranquillità della casa e approfitta della sua posizione centrale per scoprire le meraviglie della città.",
@@ -95,6 +122,8 @@ const translations = {
         "book_now": "Prenota ora!"
     },
     en: {
+        "house": "Entire apartment, 5 guests",
+        "breakfast": "No breakfast included",
         "about_us_title": "About Us",
         "about_us_subtitle": "A Modern House in the Heart of Arenaccia",
         "introduction_text": "Located in the lively Arenaccia district, our house offers the perfect combination of comfort and modernity. With a balcony overlooking the city and free Wi-Fi to stay connected, it is ideal for those who want to explore Naples with ease. Enjoy the tranquility of the house and take advantage of its central location to discover the wonders of the city.",
