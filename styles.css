@@ -1,10 +1,16 @@
 body {
     margin: 0;
     min-height: 100vh;
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 h1 {
-    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    
     font-weight: 700;
     font-size: 80px;
     line-height: 1.2em;
@@ -14,7 +20,7 @@ h1 {
 }
 
 h2{
-    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    
     font-weight: 700;
     font-size: 50px;
     line-height: 1.4em;
@@ -23,7 +29,7 @@ h2{
 }
 
 h5{
-    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    
     font-weight: 700;
     text-transform: uppercase;
     font-size: 20px;
@@ -34,7 +40,7 @@ h5{
 }
 
 h6{
-    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    
     font-weight: 700;
     text-transform: uppercase;
     font-size: 16px;
@@ -132,7 +138,10 @@ h6{
 .headerBookNow {
     width: 20.875%;
     margin-right: 0;
-    background-color: #b2b9c4;
+    background: linear-gradient(135deg, #6c757d, #495057); /* Gradient background */
+    border: 2px solid #ffffff; /* White border */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    border-radius: 5px; /* Rounded corners */
 }
 
 .headerBookNow p {
@@ -142,11 +151,19 @@ h6{
     border-radius: 0px;
     font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
     font-weight: 700 ;
-    background-color: #b2b9c4;
     padding-top: 60px ;
     padding-bottom: 60px ;
     text-align: center;
     font-size: 20px;
+}
+
+.headerBookNow a {
+    color: white;
+}
+
+.headerBookNow:hover {
+    background: linear-gradient(135deg, #495057, #6c757d); /* Invert gradient on hover */
+    transform: translateY(-3px); /* Slight lift effect */
 }
 
 .language-switcher {
@@ -172,10 +189,6 @@ h6{
         transform: translateX(0); 
         opacity: 1; 
     }
-}
-
-.headerLocation {
-    margin-left: 1rem; 
 }
 
 .mainIntroduction, .roomIntroductionRow1, .roomIntroductionRow2 {
@@ -253,7 +266,22 @@ h6{
     background-color: white;
     color: black;
     margin-top: 20px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; 
 }
+
+.moreReviews a {
+    text-decoration: none;
+    color: black;
+}
+
+.moreReviews:hover {
+    background-color: #e0e0e0; 
+    color: #333333;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-2px); 
+}
+
 
 .moreReviews p {
     font-weight: bold;
@@ -360,14 +388,13 @@ h6{
     transition: all .5s ease;
 }
 
-
-
 .footer {
     padding-top: 140px;
     padding-right: 0px;
     padding-bottom: 100px;
     padding-left: 0px;
-    background-image: linear-gradient(150deg, #2f3a44 25%, rgba(38, 46, 53, 0) 100%), url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/09/bed-and-breakfast-15.jpg) !important;
+    background-image: linear-gradient(150deg, #2f3a44 25%, rgb(38 46 53 / 55%) 100%), 
+    url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/09/bed-and-breakfast-15.jpg);
 }
 
 .detailsContainer{
@@ -380,61 +407,55 @@ h6{
 
 .buttonContainer {
     text-align: right;
+
 }
 
-.bookARoom{
+.bookARoom {
     color: #000000;
-    border-width: 10px ;
+    border-width: 10px;
     border-radius: 0px;
     font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
-    font-weight: 700 ;
+    font-weight: 700;
     background-color: #ffffff;
-
     font-size: 20px;
     padding: .3em 1em;
     line-height: 1.7em;
-    border: 2px solid rgba(0, 0, 0, 0); 
-
+    border: 2px solid rgba(0, 0, 0, 0);
     display: inline-block;
+    position: relative; 
+    transition: background-color 0.3s ease, color 0.3s ease, padding-right 0.3s ease;
+    text-decoration: none;
 }
+
+.bookARoom::after {
+    content: '>'; 
+    position: absolute;
+    right: -30px; 
+    opacity: 0; 
+    transition: right 0.3s ease, opacity 0.3s ease;
+    color: #000000;
+    font-size: 20px;
+}
+
+/* Effetto hover */
+.bookARoom:hover {
+    background-color: #f0c14b; 
+    color: #000000;
+    padding-right: 2em; 
+}
+
+
+.bookARoom:hover::after {
+    right: 10px; 
+    opacity: 1; 
+}
+
 
 .contacts{
     position: relative;
     margin-top: 4.5rem;
 }
 
-.whatsapp{
-    text-align: center;
-    height: 4rem;
-    color: #000000;
-    border-width: 10px ;
-    border-radius: 14px;
-    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif !;
-    font-weight: 700 ;
-    background-color: #ffffff;
-    font-size: 20px;
-    padding: .3em 1em;
-    line-height: 1.7em ;
-    border: 2px solid rgba(0, 0, 0, 0);
-    display: inline-block;
-}
-
-
-.email{
-    text-align: center;
-    height: 4rem;
-    color: #000000 ;
-    border-width: 10px ;
-    border-radius: 14px;
-    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif ;
-    font-weight: 700 ;
-    background-color: #ffffff;
-    font-size: 20px;
-    padding: .3em 1em;
-    line-height: 1.7em ;
-    border: 2px solid rgba(0, 0, 0, 0);
-    display: inline-block;
-}
 
 @media only screen and (min-width: 800px) and (max-width: 913px) {
     /* Stili per schermi simili a quello dell'ASUS Zenbook Fold */
@@ -496,6 +517,22 @@ h6{
 
     .firstElementOfCol, .secondElementOfCol, .thirdElementOfCol{
         margin-bottom: 30px;
+    }
+
+    .footerHeader{
+        color: white;
+    }
+
+    .footerRightside{
+        margin-top: 30px;
+    }
+
+    .buttonContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: white;
+        gap:20px;
     }
 }
 
@@ -561,6 +598,22 @@ h6{
 
     .firstElementOfCol, .secondElementOfCol, .thirdElementOfCol{
         margin-bottom: 30px;
+    }
+
+    .footerHeader{
+        color: white;
+    }
+
+    .footerRightside{
+        margin-top: 30px;
+    }
+
+    .buttonContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: white;
+        gap:20px;
     }
 
     
@@ -657,9 +710,45 @@ h6{
         margin-bottom: 0;
     }
 
+
+    .footerHeader{
+        color: white;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .buttonContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: white;
+        gap:20px
+    }
+
+    .buttonContainer p {
+        font-size: 20px;
+        margin: 0;
+    }
+
     .contacts{
         display: flex;
         justify-content: space-between;
+    }
+
+    .bookARoom{
+        margin-right: 96px;
+    }
+
+    .whatsapp{
+    font-size: 20px;
+    width: 258px;
+    display: flex;
+    }
+
+    .email{
+    font-size: 20px;
     }
 }
 
@@ -701,20 +790,6 @@ h6{
         width: 100%;
         margin: 0;
         text-align: center;
-    }
-
-    .headerBookNow p {
-        color: #ffffff ;
-        border-width: 10px ;
-        border-color: rgba(0, 0, 0, 0);
-        border-radius: 0px;
-        font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif ;
-        font-weight: 700 ;
-        background-color: #b2b9c4;
-
-        padding-top: 60px ;
-        padding-bottom: 60px;
-        display: inline-block;
     }
 
     .main{
@@ -780,26 +855,22 @@ h6{
         margin-bottom: 30px;
     }
 
-    .buttonContainer {
-        text-align: left;
+    .footerHeader{
+        color: white;
     }
 
-    .contacts{
+    .footerRightside{
+        margin-top: 30px;
+    }
+
+    .buttonContainer {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        align-items: flex-start;
+        color: white;
+        gap:20px;
     }
 
-    .whatsapp{
-        width: 13.5em;
-        line-height: normal;
-    }
-
-    .email{
-        width: 17rem;
-        font-size: 18px;
-    }
-    
     .thirdElementOfCol .toggleContent span {
         margin-left: auto;
         white-space: nowrap;

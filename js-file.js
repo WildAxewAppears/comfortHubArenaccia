@@ -8,7 +8,7 @@ const images = ["images/arenacciaStrada.jpg",
 
 const imagesDiv = document.querySelector("#fadingImage");
 
-window.setInterval(changePicture, 3000);
+window.setInterval(changePicture, 6000);
 let i = 0;
 
 function changePicture() {
