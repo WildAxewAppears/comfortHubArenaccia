@@ -133,6 +133,12 @@ h6{
     width: 20.875%;
     margin-right: 5.5%;
     padding-top: 74px;
+    gap: 3px;
+    display: flex;
+}
+
+.headerMaxGuest img, .headerBreakfast img, .headerLocation img{
+    margin-top: 8px;
 }
 
 .headerBookNow {
@@ -408,7 +414,7 @@ h6{
 
 }
 
-.bookARoom {
+.bookARoom, .email {
     color: #000000;
     border-width: 10px;
     border-radius: 0px;
@@ -464,11 +470,29 @@ h6{
     filter: brightness(1.05); 
 }
 
-.email a img {
+.email{
+    gap: 13px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #748aac;
+}
+
+.email a {
+    color: white;
+}
+
+.email img{
+    margin-left: -8px;
+    margin-top: 2px;
+    vertical-align: bottom;
+}
+
+
+.email {
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
 
-.email a:hover img {
+.email:hover{
     transform: scale(1.1); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
     filter: brightness(1.05); 
@@ -735,7 +759,7 @@ h6{
         font-size: 50px;
         font-weight: 700;
         text-align: right;
-        margin-right: 55px;
+        margin-right: 43px;
     }
 
     .buttonContainer{
@@ -757,9 +781,9 @@ h6{
     }
 
     .bookARoom{
-        margin-right: 96px;
+        margin-right: 59px;
         text-align: center;
-        width: 118px;
+        width: 154px;
         border-radius: 8px;
     }
 
@@ -770,9 +794,10 @@ h6{
     }
 
     .email{
-        font-size: 20px;
-        width: 258px;
-        display: flex;
+        margin-right: 59px;
+        text-align: center;
+        width: 154px;
+        border-radius: 8px;
     }
 }
 
