@@ -1,29 +1,33 @@
-// orto botanico, museo archeologico, aereoporto, stazione centrale,
-const images = ["images/arenacciaStrada.jpg",
-                "images/ortoBotanico.jpg",
-                "images/museoArcheologico.jpg",
-                "images/albergoDeiPoveri.jpg",
-                "images/aereoportoNapoli.jpg"
-]
 
-const imagesDiv = document.querySelector("#fadingImage");
-
-window.setInterval(changePicture, 6000);
-let i = 0;
-
-function changePicture() {
-  i++;
-  if (i > images.length - 1) i = 0;
-  imagesDiv.style.backgroundImage = `url(${images[i]})`;
-}
-
-
-
-
-
-
-
-
+const images = [
+    "images/arenacciaStrada.jpg",
+    "images/ortoBotanico.jpg",
+    "images/museoArcheologico.jpg",
+    "images/albergoDeiPoveri.jpg",
+    "images/aereoportoNapoli.jpg"
+  ];
+  
+  const preloadedImages = [];
+  const imagesDiv = document.querySelector("#fadingImage");
+  
+  function preloadImages() {
+    images.forEach((src, index) => {
+      preloadedImages[index] = new Image();
+      preloadedImages[index].src = src;
+    });
+  }
+  
+  preloadImages();
+  
+  window.setInterval(changePicture, 6000);
+  let i = 0;
+  
+  function changePicture() {
+    i++;
+    if (i > images.length - 1) i = 0;
+    imagesDiv.style.backgroundImage = `url(${images[i]})`;
+  }
+  
 const toggle = document.querySelectorAll(".toggle");
 toggle.forEach(function(toggle) {
     toggle.addEventListener("click", function(){

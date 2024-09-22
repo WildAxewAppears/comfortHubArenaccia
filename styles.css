@@ -138,15 +138,13 @@ h6{
 .headerBookNow {
     width: 20.875%;
     margin-right: 0;
-    background: linear-gradient(135deg, #6c757d, #495057); /* Gradient background */
-    border: 2px solid #ffffff; /* White border */
-    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition */
-    border-radius: 5px; /* Rounded corners */
+    background: linear-gradient(135deg, #6c757d, #495057); 
+    transition: background 0.3s ease, transform 0.3s ease; 
+    border-radius: 5px; 
 }
 
 .headerBookNow p {
     color: #ffffff ;
-    border-width: 10px ;
     border-color: rgba(0, 0, 0, 0);
     border-radius: 0px;
     font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
@@ -211,7 +209,7 @@ h6{
 .guestReviews{
     color: white;
     background-image: linear-gradient(150deg, #2f3a44 25%, rgb(47 58 68 / 78%) 100%), 
-    url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/09/bed-and-breakfast-16.jpg);
+    url(./images/livingroomplaceholder.jpg);
     background-size: cover ;
     padding: 4% 0;
 }
@@ -394,7 +392,7 @@ h6{
     padding-bottom: 100px;
     padding-left: 0px;
     background-image: linear-gradient(150deg, #2f3a44 25%, rgb(38 46 53 / 55%) 100%), 
-    url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/09/bed-and-breakfast-15.jpg);
+    url(./images/colazioneplaceholder.jpg);
 }
 
 .detailsContainer{
@@ -455,6 +453,27 @@ h6{
     position: relative;
     margin-top: 4.5rem;
 }
+
+.whatsapp a img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.whatsapp a:hover img {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    filter: brightness(1.05); 
+}
+
+.email a img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.email a:hover img {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    filter: brightness(1.05); 
+}
+
 
 
 @media only screen and (min-width: 800px) and (max-width: 913px) {
@@ -716,7 +735,7 @@ h6{
         font-size: 50px;
         font-weight: 700;
         text-align: right;
-        margin-right: 50px;
+        margin-right: 55px;
     }
 
     .buttonContainer{
@@ -739,16 +758,21 @@ h6{
 
     .bookARoom{
         margin-right: 96px;
+        text-align: center;
+        width: 118px;
+        border-radius: 8px;
     }
 
     .whatsapp{
-    font-size: 20px;
-    width: 258px;
-    display: flex;
+        font-size: 20px;
+        width: 258px;
+        display: flex;
     }
 
     .email{
-    font-size: 20px;
+        font-size: 20px;
+        width: 258px;
+        display: flex;
     }
 }
 
@@ -829,6 +853,10 @@ h6{
 
     .moreReviews{
         width: 30%;
+    }
+
+    .whatyouget{
+        padding: 10% 0;
     }
 
     .whatyougetRow1, .whatyougetRow2, .whatyougetRow3{
