@@ -223,6 +223,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const langElement = event.target.closest('.lang'); // Verificare il target corretto
         if (langElement) {
             const language = langElement.getAttribute('data-lang');
+            document.documentElement.setAttribute('lang', language);
             loadTranslations(language);
         }
     });

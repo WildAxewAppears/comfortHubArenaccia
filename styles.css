@@ -75,7 +75,6 @@ h6{
     background-image: url("images/arenacciaStrada.jpg");
     z-index: -1; 
     transition: background 1s ease-in-out;
-
 }
 
 .headerimg::before {
@@ -119,11 +118,9 @@ h6{
     margin-top: 8vw;
     margin-left: 0px;
     margin-right: auto;
-
     width: 90%;
     max-width: 90%;
     background-color: #ffffff;
-
     transform: translateX(-100%); 
     opacity: 0; 
     animation: slideInFade 1s ease-out forwards;
@@ -166,8 +163,8 @@ h6{
 }
 
 .headerBookNow:hover {
-    background: linear-gradient(135deg, #495057, #6c757d); /* Invert gradient on hover */
-    transform: translateY(-3px); /* Slight lift effect */
+    background: linear-gradient(135deg, #495057, #6c757d); 
+    transform: translateY(-3px); 
 }
 
 .language-switcher {
@@ -304,7 +301,6 @@ h6{
     font-size: 16px;
     line-height: 2em;
     max-width: 512px;
-
 }
 
 .whatyougetRow1, .whatyougetRow2, .whatyougetRow3{
@@ -335,6 +331,10 @@ h6{
     border-color: #f5f5f5;
     padding: 20px;
     border: 1px solid #d9d9d9;
+}
+
+.alert{
+    font-weight: bold;
 }
 
 .toggle{
@@ -411,7 +411,6 @@ h6{
 
 .buttonContainer {
     text-align: right;
-
 }
 
 .bookARoom, .email {
@@ -448,12 +447,10 @@ h6{
     padding-right: 2em; 
 }
 
-
 .bookARoom:hover::after {
     right: 10px; 
     opacity: 1; 
 }
-
 
 .contacts{
     position: relative;
@@ -497,8 +494,6 @@ h6{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
     filter: brightness(1.05); 
 }
-
-
 
 @media only screen and (min-width: 800px) and (max-width: 913px) {
     /* Stili per schermi simili a quello dell'ASUS Zenbook Fold */
@@ -580,8 +575,8 @@ h6{
 }
 
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 834px){
+  and (min-width: 768px) 
+  and (max-width: 834px){
 
     .mainIntroduction, .roomIntroductionRow1, .roomIntroductionRow2{
         display: flex;
@@ -622,7 +617,6 @@ h6{
 
     .firstOfTheRow, .secondOfTheRow, .thirdOfTheRow{
         width: 100%;
-        
     }
 
     .firstOfTheRow, .secondOfTheRow, .thirdOfTheRow{
@@ -658,8 +652,6 @@ h6{
         color: white;
         gap:20px;
     }
-
-    
 }
 
 @media (min-width: 981px) {
@@ -752,7 +744,6 @@ h6{
         width: 47.25%;
         margin-bottom: 0;
     }
-
 
     .footerHeader{
         color: white;
@@ -928,5 +919,4 @@ h6{
         margin-left: auto;
         white-space: nowrap;
     }
-
 }
